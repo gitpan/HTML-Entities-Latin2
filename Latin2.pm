@@ -9,7 +9,7 @@ require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(encode);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $char_map = {
 	'A1' => ['&#260;', '&#x0104;', '&Aogon;', "\x{0104}", 'LATIN CAPITAL LETTER A WITH OGONEK'],
