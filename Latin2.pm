@@ -7,7 +7,7 @@ use vars qw(*encode_entities);
 require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(encode encode_entities);
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my %ascii_entities = (
 	'"'		=> ['&#34;', '&#x0022;', '&quot;', "\x{0022}", 'QUOTATION MARK'],
@@ -178,7 +178,7 @@ HTML::Entities::Latin2 - Encode ISO-8859-2 characters into HTML entities.
 
 =head1 DESCRIPTION
 
-Translate high-bit Latin2 characters into HTML entities based on the ISO8859-2
+Translate high-bit Latin2 characters into HTML entities based on the ISO-8859-2
 character map, with option of using named, decimal or hex entities. Using
 this process will allow Eastern European encoded text to be used in ASCII
 HTML pages.
@@ -196,17 +196,17 @@ http://www.microsoft.com/globaldev/reference/iso/28592.htm
 
 =head1 AUTHOR
 
-Michael Mathews, michael@perlinpractice.com
+Michael J. Mathews, michael@perlinpractice.com
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004 Michael Mathews. All rights reserved.
+Copyright 2005 Michael J. Mathews. All rights reserved.
 
 This library is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 
 =head1 CAVEATS
 
-This library has only been tested on Perl 5.6.1, and 5.8.1
+This module has only been tested on Unix, Perl 5.6.1, and 5.8.1.
 
 =cut
